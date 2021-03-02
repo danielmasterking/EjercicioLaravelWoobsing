@@ -18,6 +18,6 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::resource('cliente', 'ClienteController');
 
-Route::get('/buscar/{buscar}', 'ClienteController@search');
+
+Route::post('crear_usuario', 'UsuarioController@crearUsuario');
